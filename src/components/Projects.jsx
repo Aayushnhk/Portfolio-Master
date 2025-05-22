@@ -1,5 +1,5 @@
-import React from 'react';
-import ProjectCard from './ProjectCard'; // Import the ProjectCard component
+import React from "react";
+import ProjectCard from "./ProjectCard"; // Import the ProjectCard component
 
 const Projects = () => {
   return (
@@ -13,19 +13,22 @@ const Projects = () => {
             title="Finly - Personal Finance Tracker"
             description="Developed a full-stack personal finance tracker that helps users manage budgets, track income and expenses, and visualize their financial health. Integrated MongoDB with Prisma for efficient schema management and scalable data storage. Designed robust backend schemas, implemented JWT-based authentication, and added custom intervals for budgets with category-specific tracking."
             imageUrl="/finly-project.png"
-            projectUrl="https://github.com/Aayushnhk/FinlyFrontend"
+            githubUrl="https://github.com/Aayushnhk/FinlyFrontend"
+            liveUrl="https://finlyo7.netlify.app/"
           />
           <ProjectCard
             title="Crypto Nest"
             description="Developed a dynamic cryptocurrency tracking website that displays real-time prices and market changes for the top 100 cryptocurrencies, supporting both INR and USD currencies. Integrated the CoinGecko API to fetch and update live cryptocurrency data, ensuring accurate and up-to-date market insights for users. Implemented detailed graphical analysis for individual cryptocurrencies on separate pages."
             imageUrl="/crypto-project.png"
-            projectUrl="https://github.com/Aayushnhk/CryptoNest"
+            githubUrl="https://github.com/Aayushnhk/CryptoNest"
+            liveUrl="https://cryptonesto7.netlify.app/" 
           />
           <ProjectCard
             title="News Flux"
             description="Built a responsive News Aggregator Web Application using React.js that delivers real-time news updates across multiple categories such as Business, Technology, and Health. Integrated the NewsAPI to dynamically fetch and display the latest headlines with pagination, enhancing content accessibility and improving user engagement. Implemented optimized client-side routing and loading states to ensure smooth navigation."
             imageUrl="/news-project.png"
-            projectUrl="https://github.com/Aayushnhk/NewsFlux"
+            githubUrl="https://github.com/Aayushnhk/NewsFlux"
+            liveUrl="https://news-flux.netlify.app/" 
           />
         </div>
       </div>
