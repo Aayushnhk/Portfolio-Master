@@ -85,8 +85,15 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-14"> {/* REDUCED FROM h-16 to h-14 */}
         {/* Logo/Brand Name */}
-        <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-          <a href="#home" onClick={(e) => handleNavLinkClick(e, '#home')} className="hover:opacity-80 transition-opacity">
+        {/* MODIFICATION HERE: Apply hover effect to the div, and ensure the link doesn't lose text-transparent */}
+        <div className="text-2xl font-bold transition-transform duration-200 hover:scale-105 inline-block">
+          <a
+            href="#home"
+            onClick={(e) => handleNavLinkClick(e, '#home')}
+            // ENSURE the text-transparent bg-clip-text gradient is always present
+            // and add a fallback text color on hover if the gradient still disappears
+            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 hover:text-white"
+          >
             Aayush Sharma
           </a>
         </div>
