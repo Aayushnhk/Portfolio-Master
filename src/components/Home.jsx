@@ -25,7 +25,7 @@ const Home = () => {
           href="#contact"
           className="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-bounce cursor-pointer"
         >
-          Hire Me
+          Get in Touch!
         </a>
       </div>
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
