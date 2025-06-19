@@ -33,6 +33,8 @@ const Projects = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: false,
+          centerMode: true,
+          centerPadding: "0px", // Reduced to 0 to avoid extra width
         },
       },
     ],
@@ -54,7 +56,7 @@ const Projects = () => {
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
               animation: `float ${Math.random() * 10 + 10}s linear infinite`,
-              animationDelay: `${Math.random() * 5}s`
+              animationDelay: `${Math.random() * 5}s`,
             }}
           />
         ))}
@@ -74,7 +76,7 @@ const Projects = () => {
         </h2>
         <div className="relative">
           <Slider {...settings}>
-            <div className="px-4">
+            <div className="px-4 sm:min-h-[450px]">
               <ProjectCard
                 title="Finly - Personal Finance Tracker"
                 description="Developed a full-stack personal finance tracker that helps users manage budgets, track income and expenses, and visualize their financial health. Integrated MongoDB with Prisma for efficient schema management and scalable data storage."
@@ -83,7 +85,7 @@ const Projects = () => {
                 liveUrl="https://finlyo7.netlify.app/"
               />
             </div>
-            <div className="px-4">
+            <div className="px-4 sm:min-h-[450px]">
               <ProjectCard
                 title="Whispr"
                 description="Developed a full-stack, real-time chat platform using Next.js, Node.js, and TypeScript. Features include JWT-based authentication, user registration/login, and WebSocket-powered public/private messaging."
@@ -92,7 +94,7 @@ const Projects = () => {
                 liveUrl="https://whispr-o7.vercel.app/"
               />
             </div>
-            <div className="px-4">
+            <div className="px-4 sm:min-h-[450px]">
               <ProjectCard
                 title="Crypto Nest"
                 description="Developed a dynamic cryptocurrency tracking website that displays real-time prices and market changes for the top 100 cryptocurrencies, supporting both INR and USD currencies."
@@ -101,7 +103,7 @@ const Projects = () => {
                 liveUrl="https://cryptonesto7.netlify.app/"
               />
             </div>
-            <div className="px-4">
+            <div className="px-4 sm:min-h-[450px]">
               <ProjectCard
                 title="News Flux"
                 description="Built a responsive News Aggregator Web Application using React.js that delivers real-time news updates across multiple categories such as Business, Technology, and Health."
