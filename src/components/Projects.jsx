@@ -12,7 +12,7 @@ const Projects = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0,
+    autoplaySpeed: 0, // Default continuous motion
     cssEase: "linear",
     pauseOnHover: true,
     arrows: false,
@@ -34,7 +34,8 @@ const Projects = () => {
           infinite: true,
           dots: false,
           centerMode: true,
-          centerPadding: "0px", // Reduced to 0 to avoid extra width
+          centerPadding: "0px",
+          autoplaySpeed: 1000, // Reduced to 1000ms (1 second) on mobile
         },
       },
     ],
